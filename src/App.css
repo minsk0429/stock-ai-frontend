@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Pretendard', 'Apple SD Gothic Neo', Arial, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title-main {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  color: #222;
+  letter-spacing: -1px;
+}
+.title-sub {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2.2rem;
+}
+.financial-juice-link {
+  display: block;
+  margin: 2.5rem auto 0 auto;
+  color: #1a73e8;
+  font-size: 1.05rem;
+  text-decoration: underline;
+  opacity: 0.85;
+}
+.financial-juice-link:hover {
+  color: #0d47a1;
+  opacity: 1;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+  border: 2.5px solid #fff;
+  padding: 2.8rem 3rem 2.2rem 3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3a4a;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  width: 90%;
+  padding: 0.9rem 1.1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  margin-bottom: 2.2rem;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  transition: border 0.2s;
+  background: #f6f8fa;
+}
+.search-input:focus {
+  border: 1.5px solid #6c63ff;
+  outline: none;
+  background: #fff;
+}
+
+.search-results {
+  list-style: none;
+  margin: 0 0 1.2rem 0;
+  padding: 0;
+  background: #f6f8fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.06);
+  max-height: 260px;
+  overflow-y: auto;
+}
+.search-results li {
+  padding: 0.85rem 1.1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.05rem;
+  color: #2d3a4a;
+  transition: background 0.15s;
+}
+.search-results li:last-child {
+  border-bottom: none;
+}
+.search-results li:hover {
+  background: #e0e7ef;
+}
+
+.selected-stock {
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+  border: 2.5px solid #fff;
+  padding: 1.5rem 1rem 1.2rem 1rem;
+  margin-top: 1.2rem;
+}
+.selected-stock h2 {
+  font-size: 1.2rem;
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+.selected-stock p {
+  margin: 0.5rem 0 0.7rem 0;
+  font-size: 1.08rem;
+  color: #2d3a4a;
+}
+.selected-stock button {
+  background: linear-gradient(90deg, #6c63ff 0%, #5a5ae6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  margin-bottom: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.selected-stock button:hover {
+  background: linear-gradient(90deg, #5a5ae6 0%, #6c63ff 100%);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.13);
+}
+
+.ai-result {
+  margin-top: 1.2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+  border: 2.5px solid #fff;
+  padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+}
+.ai-result h3 {
+  color: #6c63ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.ai-result h4 {
+  color: #2d3a4a;
+  font-size: 1rem;
+  margin: 0.7rem 0 0.3rem 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .selected-stock, .ai-result {
+    padding: 1rem 0.3rem 1rem 0.3rem;
+  }
+}
