@@ -189,6 +189,13 @@ function App() {
       >
         Financial Juice 실시간 뉴스 바로가기
       </a>
+      <div style={{ fontSize: '0.85em', color: '#888', marginTop: '24px', textAlign: 'center' }}>
+        분석에 사용되는 AI인 Prophet은 시계열 데이터를 기반으로 미래를 예측하는 통계적 모델로, 갑작스러운 이벤트는 제대로 반영하지 못합니다.<br />
+        또한 중장기로 갈수록 오차가 커집니다.<br />
+        <span style={{ color: '#aaa' }}>
+          Prophet is a statistical time series model for forecasting based on past data patterns. Sudden events are not reflected, and errors increase for long-term forecasts.
+        </span>
+      </div>
     </>
   );
 }
